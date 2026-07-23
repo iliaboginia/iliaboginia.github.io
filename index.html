@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Network Engineer</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --bg-color: #ffffff;
+            --bg-card: #f3f4f6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--bg-card);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text-main);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--bg-card);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .cert-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .cert-list li::before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ilia Boginia</h1>
+        <div class="subtitle">Network Engineer & Systems Administrator</div>
+        <div class="contact-info">
+            <span>📍 Beograd, Serbia</span>
+            <span>✉️ iliaboginia@gmail.com</span>
+            <span>🔗 linkedin.com/in/iboginia/</span>
+            <span>⏱ Experience: ~8 years in IT Infrastructure</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Information Systems Specialist with a strong focus on designing, deploying, and maintaining fault-tolerant network and server infrastructures. Highly experienced with MikroTik hardware, implementing complex L2/L3 topologies, dynamic routing, and comprehensive monitoring ecosystems.</p>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Networking</h3>
+                <p>MikroTik (RouterOS), L3 Hardware Offloading, OSPF routing, VLAN deployment, CAPsMAN, and enterprise Wi-Fi architecture.</p>
+            </div>
+            <div class="card">
+                <h3>Tunneling & VPN Architecture</h3>
+                <p>WireGuard, OpenVPN, modern VPN protocols.</p>
+            </div>
+            <div class="card">
+                <h3>Infrastructure & Monitoring</h3>
+                <p>Docker, Docker-Compose, Ansible, Oxidized, Zabbix, Grafana, Prometheus, and NetBox. SNMP metric collection and real-time dashboard visualization.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Projects</h2>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Building Network Infrastructure Modernization</div>
+            </div>
+            <ul>
+                <li>Executed a full network migration from legacy L2 D-Link switches to modern MikroTik hardware (CRS354, CRS326).</li>
+                <li>Designed a new VLAN schema and performed seamless physical hardware transitions across building floors.</li>
+                <li>Implemented baseline firewall defense checks and optimized routing configurations.</li>
+            </ul>
+            <div class="tags">
+                <span class="tag">MikroTik</span>
+                <span class="tag">Switching</span>
+                <span class="tag">VLAN</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Network Topology Design & Visualization (Public Portfolio)</div>
+            </div>
+            <ul>
+                <li>Designed a multi-tiered network architecture portfolio using Draw.io.</li>
+                <li>Created comprehensive high-level L2, L3, and Wi-Fi diagrams to demonstrate engineering proficiency.</li>
+                <li>Prepared and published sanitized, secure RouterOS configurations.</li>
+            </ul>
+            <div class="tags">
+                <span class="tag">Draw.io</span>
+                <span class="tag">Network Design</span>
+                <span class="tag">Documentation</span>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Network Administration Curriculum Development</div>
+            </div>
+            <ul>
+                <li>Authored a step-by-step training script and practical laboratory sequences for network administration students.</li>
+                <li>Covered essential topics ranging from RouterOS updates and firewall configurations to seamless Wi-Fi deployment via CAPsMAN.</li>
+            </ul>
+            <div class="tags">
+                <span class="tag">Mentorship</span>
+                <span class="tag">CAPsMAN</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education & Certifications</h2>
+        <ul class="cert-list">
+            <li><strong>MikroTik Certifications:</strong> MTCNA, MTCRE, MTCTCE.</li>
+            <li><strong>Education:</strong> Secondary Vocational Education Diploma — Specialist in Information Systems.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
